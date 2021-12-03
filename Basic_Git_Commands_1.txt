@@ -1,0 +1,70 @@
+ajessica@LIN35006743 MINGW64 ~
+$ git --version
+git version 2.34.1.windows.1
+
+ajessica@LIN35006743 MINGW64 ~
+$ git help config
+
+ajessica@LIN35006743 MINGW64 ~
+$ git config --help
+
+ajessica@LIN35006743 MINGW64 ~
+$ git branch --help
+
+ajessica@LIN35006743 MINGW64 ~
+$ mkdir GitNotes
+
+ajessica@LIN35006743 MINGW64 ~
+$ cd GitNotes
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes
+$ git init
+Initialized empty Git repository in C:/Users/ajessica/GitNotes/.git/
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git add Git-Basics.docx
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git commit -m "adding git basics first commit"
+[master (root-commit) 6525213] adding git basics first commit
+ Committer: Jessica A <abigail.jessica-a@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Git-Basics.docx
+
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git config user.username Abigail-A
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git remote add origin https://github.com/Abigail-A/Notes.git
+
+ajessica@LIN35006743 MINGW64 ~/GitNotes (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 11.29 KiB | 3.76 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Abigail-A/Notes.git
+ * [new branch]      master -> master
