@@ -68,3 +68,58 @@ Writing objects: 100% (3/3), 11.29 KiB | 3.76 MiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Abigail-A/Notes.git
  * [new branch]      master -> master
+-----------------------------------------------------------------------------------------------------------------
+
+Session 2
+
+
+ajessica@LIN35006743 MINGW64 ~
+$ cd c:
+
+ajessica@LIN35006743 MINGW64 /c
+$ mkdir GitNotes
+
+ajessica@LIN35006743 MINGW64 /c
+$ cd GitNotes
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes
+$ git clone https://github.com/Abigail-A/Notes.git
+Cloning into 'Notes'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), 12.75 KiB | 2.12 MiB/s, done.
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes
+$ ls
+Notes/
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes
+$ cd Notes
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes/Notes (master)
+$ ls
+Basic_Git_Commands_1.txt  Git-Basics.docx
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes/Notes (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ajessica@LIN35006743 MINGW64 /c/GitNotes/Notes (master)
+$ git log
+commit 231c32c1240c9f3d3458514d7d6a081cd599a8b7 (HEAD -> master, origin/master, origin/HEAD)
+Author: Abigail-A <45993144+Abigail-A@users.noreply.github.com>
+Date:   Fri Dec 3 22:28:43 2021 +0530
+
+    Create Basic_Git_Commands_1.txt
+
+commit 6525213002815c00dd5842735e05fe96cd92b480
+Author: Jessica A <abigail.jessica-a@capgemini.com>
+Date:   Fri Dec 3 13:42:54 2021 +0530
+
+    adding git basics first commit
+
