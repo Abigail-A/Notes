@@ -1,0 +1,20 @@
+Git Commands
+
+> git init - initialize local git repository
+> git add<file> - Add file(s) to index
+> git status - check status of working tree
+> git commit - commit changes in index
+> git push - push to remote repository
+> git pull - pull latest from remote repsoitory
+> git clone - clone repository into a new directory
+> git --version
+> git config --help/ git help config
+  git config --global user.name 'Abigail-A'
+  git config --global user.email 'xyz@gmail.com'
+> git rm --cached
+> git checkout <branchname> - To switch branches
+> touch login.html - to create files
+> git merge <branchname> - To merge branches
+> git remote - lists the remote repositories
+
+
