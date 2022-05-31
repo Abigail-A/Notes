@@ -1,0 +1,23 @@
+scp -i ~/Downloads/AWS_Jessica.pem ~/Downloads/AWS_Jessica.pem ubuntu@3-110-181-139:/home/ubuntu/
+
+ubuntu@ip-172-31-37-224
+
+ ssh -i "~/Downloads/AWS_Jessica.pem" ubuntu@ec2-3-110-181-139.ap-south-1.compute.amazonaws.com
+ 
+ec2-instance ansible_host=3-110-181-139 ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/AWS_Jessica.pem
+
+echo -e 'devops\tALL=(ALL)\tNOPASSWD:\tALL' > /etc/sudoers.d/devops
+
+<Host_IP> ansible_sudo_pass=<password> ansible_ssh_user=<username>
+13.232.222.147 ansible_sudo_pass=devops ansible_ssh_user=devops
+
+|1|gSmgpEWjtxM0JAbz9f+9Jc2U9ZA=|q3HWJnzAamCUMPG4c+3QFIGcY8o= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKlOKu4b1aOfFKuhTZZM1DULY4stoiPfnI3+nG3FBEhjG8z3u244f1gkZQf0oatkWa1Vq9/nNQNM8TlFophp17c=
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMjk7QEoT1FwuvQdmp5sWY54bY+P8sKu/LozRpfcHje95mUqEYw+yOMQkWdo+TN3hni7nyUlK0KWG9vjpftPmu3+CD2/tSJph0IL4UxsIemyBVNT+wcI0lKSqAL6OsiCbPZfvRdtvwSSIQ33AJZQ4zcAtTS+Aj0yZ3is4XYjAFvIATAoFrgzxGbCFZy6LHm3r6mHnz+WGeBHELfKZ64Un6iEa1SeuNptVXugWTvDrX5FWHSYWrhxkN6VMKTs1nQ3inL+2rQ+bZ3LMihzEKyAFTyAuCrGJ+cRkNGstDp7x/JNqUDk8ka9csvk3kxUMJVtVx98aSB1vDCEm22SzlKMaxXImM+9j6zfj1e5dzjsVl5yejU7ZdbzpyO8IsVBD3ud1QgmSwBfBM8a6p1lOfgbcWKPvHNDwECKWFH17ArnmzVf+wsVyDj3MEwK1glavdKzCMUhk3LgwUbCQCY6CeKTBSNU/WYXAtkjU0mnDGYkhDvkqlDvzBxpuOy1/iIn4LnxE= ubuntu@ip-172-31-37-224
+
+slave
+ssh -i "C:\Users\ajessica\Documents\AWS_Jessica.pem" ubuntu@ec2-13-232-222-147.ap-south-1.compute.amazonaws.com
+
+master
+ssh -i "C:\Users\ajessica\Documents\AWS_Jessica.pem" ubuntu@ec2-3-110-181-139.ap-south-1.compute.amazonaws.com

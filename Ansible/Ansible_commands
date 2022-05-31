@@ -1,0 +1,48 @@
+Inventory File in ansible 
+
+path: 
+create ansible directory > mkdir ansible
+cd ansible
+vim ansible > press i
+
+[webservers]
+web01
+web02
+
+[databases]
+db[01:02]
+
+press esc and :x to save modifications
+
+To list the hosts in the inventory file
+
+ansible-inventory -i inventory --list
+
+
+A default ansible.cfg file will look like this:
+https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg
+
+
+Create ansible.cfg file 
+
+vim ansible.cfg
+
+[defaults]
+inventory= /home/ubuntu/ansible/inventory
+
+[privilege_escalation]
+become=True
+become_method=sudo
+become_user=root
+become_ask_pass=False
+
+to view the file >> cat ansible.cfg
+
+
+Within the same ansible folder, create host_vars folder
+and then create a db01 file > vim db01
+
+#hostvariablesfordb01systems
+---
+become_ask_pass: True
+
